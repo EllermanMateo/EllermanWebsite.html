@@ -31,7 +31,13 @@ line-height: 185%;
  .subtitle{font-family: cursive;
    color: white;
    text-align: center;
- }
+   }
+ #ERSidebar {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: black;
+    margin-top: 0px;
  body{
 margin-top: -40px;
  }
@@ -59,10 +65,10 @@ margin-top: -40px;
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
   <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
   <div class="sidebar" style="margin-top: 15px; top: 100; width: 230px; left: 10; z-index: 1; background: black; color: white; text-align: center; height: 510px; font-family: Arial;">
-    <div style="font-size: 30px;">Contact Information</div>
-    <div style="font-size: 15px; bottom: ">Ethical Reflections</div>
+    <!--LEFT THESE LINES JUST IN CASE I NEED THEM <div style="font-size: 30px;">Contact Information</div>
+    <div style="font-size: 15px; bottom: ">Ethical Reflections</div>-->
 <button onclick="myFunction()">Ethical Reflections</button>
-<div id="myDIV">
+<div id="ERSidebar">
 Ethical Reflection One
 </div>
 
@@ -76,13 +82,13 @@ Ethical Reflection One
   </div>
 <div class= "decorations"style="margin-top: -535px;">
     <p>
-My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend <em>Phillips Academy Andover</em> and my favorite class is computer science- probably because I will soon be able to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.
+My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend <em>Phillips Academy Andover</em> and my favorite class is computer science- probably because it will teach me how to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.
 <p>Unknown to you, this is actually the very first website I am creating through the use of HTML and CSS, hopefully JavaScript in the near future. I am using a program called Atom to type this very text as well as GitHub to make it avaliable to you, the audience as well as accesible to the world! You might be thinking, coding a website is nearly impossible! I am here to say that as a newbie, I am learning the ropes through my awesome teacher, the infamous Dr. Z! Currently, in class I am completing Ethical Reflections which can be accessed right <a href="Ethical_Reflections.html"> here.</a>
 </p>
 </div>
 <script>
 function myFunction() {
-    var x = document.getElementById("myDIV");
+    var x = document.getElementById("ERSidebar");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
