@@ -3,11 +3,11 @@
 <head>
   <style>
 .background {
-  background-image: url("http://lava360.com/wp-content/uploads/2014/01/Classic-Background-Images-For-Wordpress-Blogs-14.jpg");
+  background-image: url("https://marketingweek.imgix.net/content/uploads/2017/05/12103909/Coding-body-image-.jpg?auto=compress,format,&crop=faces,entropy,edges&fit=crop&q=60&w=750&h=460");
   height: 75%;
 }
 .header{
-  color: rgb(134, 0, 108);
+  color: rgb(31, 147, 180);
   font-size: 35px;
   border-radius: 7px;
   background-color: rgb(228, 217, 228);
@@ -84,8 +84,13 @@ background-color: white;
   </div>
 <div class= "decorations"style="margin-top: -535px;">
     <p>
-My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend <em>Phillips Academy Andover</em> and my favorite class is computer science- probably because it will teach me how to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.
+<!--My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend <em>Phillips Academy Andover</em> and my favorite class is computer science- probably because it will teach me how to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.
 <p>Unknown to you, this is actually the very first website I am creating through the use of HTML and CSS, hopefully JavaScript in the near future. I am using a program called Atom to type this very text as well as GitHub to make it avaliable to you, the audience as well as accesible to the world! You might be thinking, coding a website is nearly impossible! I am here to say that as a newbie, I am learning the ropes through my awesome teacher, the infamous Dr. Z! Currently, in class I am completing Ethical Reflections which can be accessed right <a href="Ethical_Reflections.html"> here.</a>
+-->
+  <p><button onclick="myFunction()">Ethical Reflection One</button></p>
+
+<div id="myDIV">My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend Phillips Academy Andover and my favorite class is computer science- probably because it will teach me how to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.
+</div>
 </p>
 </div>
 <script>
@@ -95,6 +100,14 @@ function myFunction() {
         x.style.display = "block";
     } else {
         x.style.display = "none";
+    }
+}
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.innerHTML === "My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend Phillips Academy Andover and my favorite class is computer science- probably because it will teach me how to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.") {
+        x.innerHTML = "The thought of software predicting the likelihood of future criminals seems like technology in the near decades, however; it exists today but with some discrepancies. From a New York Times article, a question directed towards Chief Justice Roberts Jr. highlighted a concern to jurisdiction. Moreover, the response from the chief justice brought up Compas, a software that assessed potential criminals, that created controversy in the Wisconsin Supreme Court vs. Loomis. Despite generating an assessment of Loomis, the court admitted some uncertainty in the reliability of the secret algorithm. Notably, even Wisconsin's attorney general and Justice Bradley warned of allowing Compas to dictate sentences, solely. Still, the NY Times article only mentions one case and other similar cases should be included to build up validity in its claims. The idea that Compas and related softwares are in more courts and justice systems appears exciting, but the way they have become too dependent on is concerning. To me, Northpointe is somewhat offsetting crime sentences and should consider improvements for its flaws between evaluating individuals, as both ProPublica and NY Times agree that blacks are more likely incorrectly assessed as opposed to whites. A solution to Compas is to improve their system against unfair discrimination and add more flexibility into their software by increasing its ability to take into consideration multiple scenarios like economic status as well as educational and social backgrounds. Nevertheless, Compas is a great revolution to the criminal justice system as crime is increasing into the U.S., according to a NY Times and USA Today report., and the ability to filter people can greatly ease the tension in jails/prisons as there is overcrowding- mostly from awaiting trial (NY Post). But Compas allows courts to determine if it is necessary to incarcerate individuals and is an advancement in technology that can one day, be more reliable and credible. If it were up to me, I would use Compas as somewhere were to start on a sentence yet rely on the entire background of the individual to determine the appropriate level of sentence. An awesome software, but Compas still has a long way to go before it can be fully trusted as many websites lash out at its incompetence (like MIT Technology, NY Times and ProPublica).";
+    } else {
+        x.innerHTML = "My name is Ellerman Mateo. I am a talented Cross Country and Track athlete from the Mighty state of Florida. I find that running relieves me of stress and enables a way for me to become closer to Mother Nature. I strive towards engagement in the community and becoming a stronger, postive influence to mankind. I currently attend Phillips Academy Andover and my favorite class is computer science- probably because it will teach me how to hack. Don't tell Dr. Z! No really, it is very fascinating how to use simple lines of code to create sophisticated workpieces and the world is becoming more technologically advanced everyday, so we will need more programmers.";
     }
 }
 </script>
