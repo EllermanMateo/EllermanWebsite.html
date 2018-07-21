@@ -1,4 +1,54 @@
+<!DOCTYPE html>
 <html>
+<head>
+<style>
+.outer {
 
+}
 
+.column {
+  padding: 10px 10px;
+  background-color: rgb(40, 20, 15);
+  width: 30%;
+  min-height: 400px;
+  margin: 5px;
+}
+
+.outer p, h3 {
+  color: rgb(240, 240, 240);
+}
+</style>
+</head>
+<body>
+<h1> Using Flexbox</h1>
+<p> Here is an example of a three-column layout using <code>display: flex</code>.
+
+<div class="outer">
+  <div class="column" style="display: inline-block;">
+    <p> Make initial square</p>
+  </div>
+  <div class="column" style="display: inline-block;">
+    <p> Make initial square</p>
+  </div>
+    <div class="column" style="display: inline-block;">
+    <p> Make initial square</p>
+  </div>
+    <div class="column" style="display: inline-block;">
+    <p> Make a middle square</p>
+  </div>
+    <div class="column" style="display: inline-block;">
+    <p> Make a middle square</p>
+  </div>
+    <div class="column" style="display: inline-block;">
+    <p> Make a middle square</p>
+  </div>
+    <div class="column" style="display: inline-block;">
+    <p> Make a bottom square</p>
+  </div>  <div class="column" style="display: inline-block;">
+    <p> Make a bottom square</p>
+  </div>  <div class="column" style="display: inline-block;">
+    <p> Make a bottom square</p>
+  </div>
+</div>
+</body>
 </html>
