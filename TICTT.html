@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.column {
+  padding: 10px 10px;
+  background-color: lightblue;
+  width: 25%;
+  min-height: 350px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+.outer p, h3 {
+  color: rgb(246, 4, 4);
+}
+.column {
+	border-collapse:collapse;
+}
+
+.td {
+	background-color: black;
+	border: 6px solid white;
+	font-size:80px;
+	color:lightblue;
+	border-radius: 20px 20px 20px 20px;
+}
+#circ1{
+  visibility: hidden;
+}
+#circ2{
+  visibility: hidden;
+}
+#circ3{
+  visibility: hidden;
+}
+#circ4{
+  visibility: hidden;
+}
+#circ5{
+  visibility: hidden;
+}
+#circ6{
+  visibility: hidden;
+}
+#circ7{
+  visibility: hidden;
+}
+#circ8{
+  visibility: hidden;
+}
+#circ9{
+  visibility: hidden;
+}
+#img1{
+  visibility: hidden;
+}
+#img2{
+  visibility: hidden;
+}
+#img3{
+  visibility: hidden;
+}
+#img4{
+  visibility: hidden;
+}
+#img5{
+  visibility: hidden;
+}
+#img6{
+  visibility: hidden;
+}
+#img7{
+  visibility: hidden;
+}
+#img8{
+  visibility: hidden;
+}
+#img9{
+  visibility: hidden;
+}
+</style>
+</head>
+<body>
+<h1 style="margin-top: -11px;"> Tic-Tac-Toe</h1>
+<!--<p> Enjoy the game</p>-->
+  <div class="column" style="display: inline-block;" onclick="showImg1()">
+    <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img1" style="margin-left: 20px; width: 90%; text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ1" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+  <div class="column" style="display: inline-block;" onclick="showImg2()">
+    <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img2"  style="margin-left: 20px; width: 90%; text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ2" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+    <div class="column" style="display: inline-block;" onclick="showImg3()">
+      <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img3"  style="margin-left: 20px; width: 90%; text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ3" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+    <div class="column" style="display: inline-block;" onclick="showImg4()">
+      <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img4"  style="margin-left: 20px; width: 90%; text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ4" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+    <div class="column" style="display: inline-block;" onclick="showImg5()">
+      <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img5"  style="margin-left: 20px; width: 90%; text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ5" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+    <div class="column" style="display: inline-block;" onclick="showImg6()">
+      <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img6"  style="margin-left: 20px; width: 90%; text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ6" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+    <div class="column" style="display: inline-block;" onclick="showImg7()">
+      <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img7"  style="margin-left: 20px; width: 90%; text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ7" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+  <div class="column" style="display: inline-block;" onclick="showImg8()">
+    <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img8"  style="margin-left: 20px; width: 90%; text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ8" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+   <div class="column" style="display: inline-block;" onclick="showImg9()">
+     <img src="http://bookriotcom.c.presscdn.com/wp-content/uploads/2013/07/x.png" id="img9"  style="margin-left: 20px; width: 90%; text-align: center;">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Letter_o.svg/2000px-Letter_o.svg.png" id="circ9" style="margin-left: 20px; margin-top: -375px; width: 100%; text-align: center;">
+  </div>
+</div>
+<script>
+var x = 0;
+function showImg1(){
+  if (x % 2 == 0){
+    document.getElementById("img1").style.visibility = "visible";
+    x++;
+  }
+  else if (x % 2 == 1){
+    document.getElementById("circ1").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg2(){
+  if (x % 2 == 0){
+    document.getElementById("img2").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ2").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg3(){
+  if (x % 2 == 0){
+    document.getElementById("img3").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ3").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg4(){
+  if (x % 2 == 0){
+    document.getElementById("img4").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ4").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg5(){
+  if (x % 2 == 0){
+    document.getElementById("img5").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ5").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg6(){
+  if (x % 2 == 0){
+    document.getElementById("img6").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ6").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg7(){
+  if (x % 2 == 0){
+    document.getElementById("img7").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ7").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg8(){
+  if (x % 2 == 0){
+    document.getElementById("img8").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ8").style.visibility = "visible";
+    x++;
+  }
+}
+function showImg9(){
+  if (x % 2 == 0){
+    document.getElementById("img9").style.visibility = "visible";
+    x++;
+  }
+  else{
+    document.getElementById("circ9").style.visibility = "visible";
+    x++;
+  }
+}
+</script>
+</body>
+</html>
