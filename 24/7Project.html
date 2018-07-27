@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+.header{
+  display: inline-block;
+  width: 400px;
+  height: 75px;
+  margin:0;
+  /*border: 3px solid red; JUST IN CASE YOU LOSE HEADER AND NEED TO FIND IT*/
+  position: sticky;
+  margin-left: 500px;
+}
+.header2{
+  display: inline-block;
+  width: 73px;
+  height: 70px;
+  float: right;
+  margin:0;
+  padding: 0;
+}
+.designb{
+  text-align: center;
+  background-color: #466289;
+  height: 70px;
+}
+#editbutton{
+  height: 23px;
+  border-radius: 5px;
+  width: 105px;
+  border: 2px solid lightblue;
+  background-color: #A0AEC3;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+#editbutton:hover{
+background-color: black;
+color: #A0AEC3;
+}
+#homepage{
+  height: 627px;
+  background-color: #DBE8F9;
+}
+#bottomarea{
+  background-color: #466289;
+  height: 70px;
+  margin-top: -20px;
+}
+.body{
+  margin: 0;
+  padding: 0;
+}
+.leftcorner{
+  float: left;
+  color: #FA6121;
+  /*border: 2px solid black;*/
+  width:80px;
+  height: 50px;
+  align-content: center;
+  font-size: 14px;
+  font-family: serif;
+  /*dislpay inline-block* CHECK IT OUT*/
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: inherit;
+  top: 50%;
+  width: 100px;
+  padding: 16px;
+  margin-top: -22px;
+  color: #A0AEC3;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-right: 200px;
+}
+.next {
+  cursor: pointer;
+  position: inherit;
+  top: 50%;
+  width: 100px;
+  padding: 16px;
+  margin-top: -22px;
+  color: #A0AEC3;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 20;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #FFB739;
+  font-size: 15px;
+  width: 75%;
+  margin-left: -150px;
+  margin-top: -100px;
+  /*border: 2px solid orange; JUST IN CASE I LOOSE IT.*/
+  position: absolute;
+}
+
+div.first {
+    background: rgba(160, 174, 195, 0.5);
+    height: 50px;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size*/
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.recenter{
+  margin-top: -540px;
+}
+/*.textheadings {
+  font-family: sans-serif;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: #FA6121;
+} CAREFUL AS IT WILL BE CONFUSING TO INSERT IT INTO JAVASCRIPT*/
+  </style>
+<title>24/7 Project</title>
+</head>
+<body class="body">
+<img class="header" src="https://previews.dropbox.com/p/thumb/AAKIxp94of_zgJwfwoRjZDBeUDTJjuBTWwOZV4iRQR43NY80A1CsB28VJjv8ey_zl3-sRiTl8_hMCTpXo6tJJ46qsmqO8TwkuxN9xANO7XtTnZB1P_8sR8qRIKkb1-Ozk287iWNRYjBpCEaJiPibh4MQLQIv1POc-WvMesBoC0088g/p.png?size=2048x1536&size_mode=3">
+<img class="header2" src="https://previews.dropbox.com/p/thumb/AAJ1GFucY1P2IKZPOHGaV4hDt6J5wSMcilLeIl72OhQ9NnzML6i5bYxHlS8PSfHblktN55ue8HGkB-HcGJhqVr1bAazK1UhttH5MjaXB7R2w_8mgKJLlSCeNWlClAnRXNq4jWzGsa9Io3Sxf6gxkcH6AZiL0rbjuSb-JerHlnuDxXA/p.jpeg?size=2048x1536&size_mode=3">
+<img class="header2" src="https://previews.dropbox.com/p/thumb/AAKh0r1fv-ZmFj3gv4yj33STQy8NZ147Q7LEGUw42s4YuXbaHXxGpzh3dzC__nL-kDGojJcw7Ub1jYXmGAa1fDAGJj-m4X4W2891nG8RRUPF1jNFrQ5rSudOFT7jSBaFF5cQAfIY9G8L8G5J2yz86yRFDgBzNvXvUXNO6DxPKrwifQ/p.png?preserve_transparency=1&size=2048x1536&size_mode=3">
+<img class="header2" src="https://previews.dropbox.com/p/thumb/AAKNju_lJF_TRep5rrYZQD_PyVzC814-mjjnxToZ_TUssH5rKeA64XnxuM4_mQtZZ_XSz_Wqya1nBAwSGC03kVIIHdhEbKdCeDEJRLioPJz2RAKm032FwukCyGjuX_NuXgRUF4-r86FSR3RiaTqnOzJ6RWDBsESG6EXJdk8uGLAZSA/p.png?preserve_transparency=1&size=2048x1536&size_mode=3">
+<img class="header2" src="https://previews.dropbox.com/p/thumb/AALlaKZbkN-M4G1lon1Fd1XWYzBgztztS6p5AngArevGwkvtqrVlS5FBz71Vptd12c2mT_QutjrJ44H3GJ_hyI1IWpRF7HlnIeLuJaaCE492ytLLf_oU-IwJnW3OanQShgzGMi6GPI9R8YyR_EnovpaeYjWBgt9GFDrMpDjRrvdsJQ/p.png?preserve_transparency=1&size=2048x1536&size_mode=3">
+<img class="header2" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/1200px-Premier_League_Logo.svg.png">
+<div class="designb">
+<h2>
+<button onclick="myFunction1()" id="editbutton">About</button>
+<button onclick="myFunction2()" id="editbutton">World Cup</button>
+<button onclick="myFunction3()" id="editbutton">News</button>
+<button onclick="myFunction4()" id="editbutton">Transfers</button>
+<button onclick="myFunction5()" id="editbutton">Clubs</button>
+</h2>
+<h3><div id="homepage">
+</div></h3>
+<h4><div id="bottomarea">
+  <p class="leftcorner">Created at Phillips Academy</p>
+</div></h4>
+
+<div id="myDIV">
+<div class="recenter">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://s.yimg.com/ny/api/res/1.2/l2ZTdmmUJ0tTOPfE0Tv4Tw--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-GB/homerun/uk.goal.com/a1c94fc594ee2e72ddec5a06f3a8c4b9" style="width:150%; border: 4px solid #FA6121; height:450px; margin-left:-150px;margin-top: -80px;">
+<img src="https://igil.info/wp-content/uploads/2018/04/jeux-d-equipe-animation-la-fff-lance-une-equipe-de-france-d-esport-of-jeux-d-equipe-animation-1.jpg" style="width: 23%; margin-top: -446px; position:absolute; margin-left: -396px;">
+<img src="http://www.jhta2016.fr/bmz_cache/7/7adee960cabc993ee9f07ea9a1dd0275.image.654x550.jpg?lightbox" style="width: 22%; margin-top: -446px; position:absolute; margin-left: -285px; height: 76px;">
+  <div class="text"<p> <div class="first">France  advances  to  the  World  Cup  Final  after  a  1-0  win  over  Belgium!</div></p></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="http://images.sportbuzzer.de/v1/photos/raw/moscow-russia-july-11-mario-mandzukic-of-croatia-celebrates-with-teammates-after/regular-16-9" style="width:150%; border: 4px solid #FA6121; height:450px; margin-left:-150px;margin-top: -80px;">
+  <div class="text" style="width: 100%; margin-top: -440px; position:absolute; margin-left: 150px; height: 76px;">Croatia beats England 2-1 in an extra time thriller.</div>
+</div>
+<div class="mySlides fade">
+  <img src="https://steemitimages.com/0x0/https://newspig.co.uk/wp-content/uploads/2018/07/cristiano-ronaldo-to-juventus-real-madrid-confirm-transfer-in-105m-agreement.jpg" style="width:150%; border: 4px solid #FA6121; height:450px; margin-left:-150px;margin-top: -80px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <img src="http://www.7msport.com/photo/upload/20180716/092556dvvco0zs1j1531704356489988.jpg" style="width:150%; border: 4px solid #FA6121; height:450px; margin-left:-150px; margin-top: -80px;">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
