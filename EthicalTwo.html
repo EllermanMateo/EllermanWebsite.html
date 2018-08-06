@@ -1,7 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+  .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+  .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
 .background {
   background-image: url("https://marketingweek.imgix.net/content/uploads/2017/05/12103909/Coding-body-image-.jpg?auto=compress,format,&crop=faces,entropy,edges&fit=crop&q=60&w=750&h=460");
   height: 75%;
@@ -82,18 +135,46 @@ a {
 </div>
 </div>
    </h2>
-  <hr/>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Ethical Reflections
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="EthicalOne.html">Ethical Reflection One</a>
+        <a href="EthicalTwo.html">Ethical Reflection Two</a>
+        <a href="EthicalThree.html">Ethical Reflection Three</a>
+        <a href="EthicalFour.html">Ethical Reflection Four</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Projects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Project One</a>
+        <a href="#">P2</a>
+        <a href="#">Project 3</a>
+        <a href="#">Project Test</a>
+      </div>
+    </div>
+  </div>
+
   <link rel="styles=heet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
   <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
   <div class="sidebar" style="margin-top: 15px; top: 100; width: 230px; left: 10; z-index: 1; background: black; color: white; text-align: center; height: 510px; font-family: Arial;">
+
     <!--LEFT THESE LINES JUST IN CASE I NEED THEM <div style="font-size: 30px;">Contact Information</div>
     <div style="font-size: 15px; bottom: ">Ethical Reflections</div>-->
-<button class="ethical" onclick="myFunction()" style="width: 230px; background-color: lightblue; cursor: pointer; font-size: 24px; outline: none;">Ethical Reflections</button>
+
+<!-- <button class="ethical" onclick="myFunction()" style="width: 230px; background-color: lightblue; cursor: pointer; font-size: 24px; outline: none;">Ethical Reflections</button> -->
 <!-- <button onclick="myFunction1()" id="ERSidebar">Bio</button> -->
-<button onclick="myFunction2()" id="ERSidebar"><a href="EthicalOne.html">Ethical Reflection One</a></button><br>
+
+<!-- <button onclick="myFunction2()" id="ERSidebar"><a href="EthicalOne.html">Ethical Reflection One</a></button><br>
 <button onclick="myFunction3()" id="ERSidebar"><a href="EthicalTwo.html">Ethical Reflection Two</a></button>
 <button onclick="myFunction4()" id="ERSidebar"><a href="EthicalThree.html">Ethical Reflection Three</a></button>
-<button onclick="myFunction4()" id="ERSidebar"><a href="EthicalFour.html">Ethical Reflection Four</a></button>
+<button onclick="myFunction4()" id="ERSidebar"><a href="EthicalFour.html">Ethical Reflection Four</a></button> -->
+
     <br>
     <img src="https://instagram.fbed1-2.fna.fbcdn.net/vp/53e9dc42123286bd8ef7a88bd87e860b/5BE374E7/t51.2885-19/s320x320/32587072_167748077225928_8279539556080943104_n.jpg" style="width: 200px; display: inline-block; border-radius: 100px;">
     <br>
@@ -105,15 +186,13 @@ a {
 <div class= "decorations"style="margin-top: -535px;">
 <br>
 
-<p id="myDIV" style="margin-top: -20px; margin-left: 40px; line-height: 2.2;">
-  According to a TEDGlobal speaking by Tufekci "We're building a dystopia just to make people click on ads," despite "well-intentioned" choices by algorithm designers, the methods of algorithms can essentially control people, indirectly. One example is the scene where one person might start watch on YouTube video but then spend an hour watching dozens more. Moreover, experiments conducted on Google and Facebook reveal that their algorithms targets individuals who are susceptible to certain ads quite easily. A YouTube video on "How ads work on YouTube," reinforces the idea that ads are coded to certain people who meet the standards for particular behavior or viewing the material. For instance -when watching the YouTube video- an ad appeared on cue by the narrator which almost seemed eerie. According to the Washington Post, ads on Facebook proved crucial to the 2016 presidential election, particularly (now president) Donald Trump. During the campaign, the Trump campaign spent millions targeting people on Facebook, but by identifying those with similar characteristics relating to the target of the ads and those important to the polls. As technology advance, more people are spending time on online devices and exposed to advertisements that match their behavior and beliefs, etc. A concerning idea about the aspect of programming behind ads is that people receive them based on their search history and it can be dangerous messages that the users are unaware of. Of these sources, all agree that often an ad will appear that seems completely random however is somehow connected. I do not like to think that when I can legally vote, that I will be targeted when there are government elections and that there will be extremist messages that are conveyed to me. Despite ads being somewhat invasive, the process of managing ads seems practically impossible as stated by the TEDGlobal spokesperson, nevertheless; one solution might be to purchase an ad-free subscription as I find it disturbing upon the effect of ads. However, those unwilling to purchase ad-free access are exposed to an ad that an algorithm sends them and that these programs restrictions are limitless. Overall, there is no plausible method to avoid ads that reflect one's personality, which quite frankly, is frightening. Who knows how many ads anyone is exposed to and which ones are negative? To me, no one is invincible to advertisements and when pondering about it is unimaginable and conflicting.
-</p>
-<!-- <div id="myDIV2" style="display: none;">
-  The thought of software predicting the likelihood of future criminals seems like technology in the near decades, however; it exists today but with some discrepancies. From a New York Times article, a question directed towards Chief Justice Roberts Jr. highlighted a concern to jurisdiction. Moreover, the response from the chief justice brought up Compas, a software that assessed potential criminals, that created controversy in the Wisconsin Supreme Court vs. Loomis. Despite generating an assessment of Loomis, the court admitted some uncertainty in the reliability of the secret algorithm. Notably, even Wisconsin's attorney general and Justice Bradley warned of allowing Compas to dictate sentences, solely. Still, the NY Times article only mentions one case and other similar cases should be included to build up validity in its claims. The idea that Compas and related softwares are in more courtspears exciting, but the way they have become too dependent on is concerning. To me, Northpointe is somewhat offsetting crime sentences and should consider improvements for its flaws between evaluating individuals, as both ProPublica and NY Times agree that blacks are more likely incorrectly assessed as opposed to whites. A solution to Compas is to improve their system against unfair discrimination and add more flexibility into their software by increasing its ability to take into consideration multiple scenarios like economic status as well as educational and social backgrounds. Nevertheless, Compas is a great revolution to the criminal justice system as crime is increasing into the U.S., according to a NY Times and USA Today report., and the ability to filter people can greatly ease the tension in jails/prisons as there is overcrowding- mostly from awaiting trial (NY Post). But Compas allows courts to determine if it is necessary to incarcerate individuals and is an advancement in technology that can one day, be more reliable and credible. If it were up to me, I would use Compas as somewhere were to start on a sentence yet rely on the entire background of the individual to determine the appropriate level of sentence. An awesome software, but Compas still has a long way to go before it can be fully trusted as many websites lash out at its incompetence (like MIT Technology, NY Times and ProPublica).
-</div>
-<div id="myDIV3" style="display: none;">
+<p id="er2" style=" position: absolute; padding-right: 100px; margin-top: -20px; margin-left: 40px; line-height: 2.2;">
 According to a TEDGlobal speaking by Tufekci "We're building a dystopia just to make people click on ads," despite "well-intentioned" choices by algorithm designers, the methods of algorithms can essentially control people, indirectly. One example is the scene where one person might start watch on YouTube video but then spend an hour watching dozens more. Moreover, experiments conducted on Google and Facebook reveal that their algorithms targets individuals who are susceptible to certain ads quite easily. A YouTube video on "How ads work on YouTube," reinforces the idea that ads are coded to certain people who meet the standards for particular behavior or viewing the material. For instance -when watching the YouTube video- an ad appeared on cue by the narrator which almost seemed eerie. According to the Washington Post, ads on Facebook proved crucial to the 2016 presidential election, particularly (now president) Donald Trump. During the campaign, the Trump campaign spent millions targeting people on Facebook, but by identifying those with similar characteristics relating to the target of the ads and those important to the polls. As technology advance, more people are spending time on online devices and exposed to advertisements that match their behavior and beliefs, etc. A concerning idea about the aspect of programming behind ads is that people receive them based on their search history and it can be dangerous messages that the users are unaware of. Of these sources, all agree that often an ad will appear that seems completely random however is somehow connected. I do not like to think that when I can legally vote, that I will be targeted when there are government elections and that there will be extremist messages that are conveyed to me. Despite ads being somewhat invasive, the process of managing ads seems practically impossible as stated by the TEDGlobal spokesperson, nevertheless; one solution might be to purchase an ad-free subscription as I find it disturbing upon the effect of ads. However, those unwilling to purchase ad-free access are exposed to an ad that an algorithm sends them and that these programs restrictions are limitless. Overall, there is no plausible method to avoid ads that reflect one's personality, which quite frankly, is frightening. Who knows how many ads anyone is exposed to and which ones are negative? To me, no one is invincible to advertisements and when pondering about it is unimaginable and conflicting.
-</div> -->
+<br>
+<a href="https://www.ted.com/talks/zeynep_tufekci_we_re_building_a_dystopia_just_to_make_people_click_on_ads">We're building a dystopia just to make people click on ads.</a>
+<br>
+<a href="https://www.youtube.com/watch?v=KW0eUrUiyxo">How ads work on YouTube</a>
+</p>
 <script>
 </script>
 

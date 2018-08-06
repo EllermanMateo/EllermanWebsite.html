@@ -1,7 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+  .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+  .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
 .background {
   background-image: url("https://marketingweek.imgix.net/content/uploads/2017/05/12103909/Coding-body-image-.jpg?auto=compress,format,&crop=faces,entropy,edges&fit=crop&q=60&w=750&h=460");
   height: 75%;
@@ -82,18 +135,46 @@ a {
 </div>
 </div>
    </h2>
-  <hr/>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Ethical Reflections
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="EthicalOne.html">Ethical Reflection One</a>
+        <a href="EthicalTwo.html">Ethical Reflection Two</a>
+        <a href="EthicalThree.html">Ethical Reflection Three</a>
+        <a href="EthicalFour.html">Ethical Reflection Four</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Projects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Project One</a>
+        <a href="#">P2</a>
+        <a href="#">Project 3</a>
+        <a href="#">Project Test</a>
+      </div>
+    </div>
+  </div>
+
   <link rel="styles=heet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
   <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
   <div class="sidebar" style="margin-top: 15px; top: 100; width: 230px; left: 10; z-index: 1; background: black; color: white; text-align: center; height: 510px; font-family: Arial;">
+
     <!--LEFT THESE LINES JUST IN CASE I NEED THEM <div style="font-size: 30px;">Contact Information</div>
     <div style="font-size: 15px; bottom: ">Ethical Reflections</div>-->
-<button class="ethical" onclick="myFunction()" style="width: 230px; background-color: lightblue; cursor: pointer; font-size: 24px; outline: none;">Ethical Reflections</button>
+
+<!-- <button class="ethical" onclick="myFunction()" style="width: 230px; background-color: lightblue; cursor: pointer; font-size: 24px; outline: none;">Ethical Reflections</button> -->
 <!-- <button onclick="myFunction1()" id="ERSidebar">Bio</button> -->
-<button onclick="myFunction2()" id="ERSidebar"><a href="EthicalOne.html">Ethical Reflection One</a></button><br>
+
+<!-- <button onclick="myFunction2()" id="ERSidebar"><a href="EthicalOne.html">Ethical Reflection One</a></button><br>
 <button onclick="myFunction3()" id="ERSidebar"><a href="EthicalTwo.html">Ethical Reflection Two</a></button>
 <button onclick="myFunction4()" id="ERSidebar"><a href="EthicalThree.html">Ethical Reflection Three</a></button>
-<button onclick="myFunction4()" id="ERSidebar"><a href="EthicalFour.html">Ethical Reflection Four</a></button>
+<button onclick="myFunction4()" id="ERSidebar"><a href="EthicalFour.html">Ethical Reflection Four</a></button> -->
+
     <br>
     <img src="https://instagram.fbed1-2.fna.fbcdn.net/vp/53e9dc42123286bd8ef7a88bd87e860b/5BE374E7/t51.2885-19/s320x320/32587072_167748077225928_8279539556080943104_n.jpg" style="width: 200px; display: inline-block; border-radius: 100px;">
     <br>
@@ -105,8 +186,12 @@ a {
 <div class= "decorations"style="margin-top: -535px;">
 <br>
 
-<p id="myDIV" style="margin-top: -20px; margin-left: 40px; line-height: 2.2;">
+<p id="er3" style="position: absolute; padding-right: 100px; margin-top: -20px; margin-left: 40px; line-height: 2.2;">
   Throughout the years, the significance of net neutrality has been consistently debated, and one question comes to mind, why do America still have it? In a podcast "The Neutral Zone" by IRL, major points from both frontiers were included. Major companies like AT&T and Comcast agree that the regulations regarding net neutrality should be discarded since it "is fundamental to competition." According to a Mozilla study, 76% of Americans support the freedom from net neutrality. On the other hand, supporters like Barbara van S. and Dominic Girard highlight the consequences of blocking and discrimination as well as network traffic which can be supported through a European experiment with an "open Internet." However, based on the podcast findings, most Americans favor an anti-net neutrality which a Forbes article focuses on three main key points. Like net neutrality, the article agrees that a consequence without net neutrality would be more competition, which appears like an excellent benefit to achieve products that people desire. Likewise, more liberals call towards privacy against government regulation in the Internet as well as more freedom. Nowadays, there are countless movements towards liberty, some of which are gun control policies, border-immigration crises, and sexual abuses through government officials, etc. The advantages of life without net neutrality appear to be working towards the common good, however; like Belmont noted, the "people have well-intentions but are misdirected." Based on the two sources, I personally feel that net neutrality is here to stay. One important aspect of net neutrality is that the National Security Agency (NSA) can regulate potential terrorists' communication as well as illegal activities. I recognize that Americans enjoy privacy, however; it is a social contract where the government protects the country for the sacrifice of certain liberties, for the common good. A free open market on the Internet seems ideal, but it is concerning that companies can dictate their service to consumers and lower standards. Even when people move to different companies, there is not the guaranties of better service and would increase complications. More importantly, having equal Internet speed connection is the most alluring in liberals who hope to have fair opportunities for all.
+  <br>
+  <a href="https://irlpodcast.org/season1/episode2/">"The Nuetral Zone" by IRL</a>
+  <br>
+  <a href="https://www.forbes.com/sites/joshsteimle/2014/05/14/am-i-the-only-techie-against-net-neutrality/#21bd5cfd70d5">Am I The Only Techie Against Net Neutrality?</a>
 </p>
 <script>
 </script>
